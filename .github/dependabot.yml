@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: amazon-cognito-identity-js
+    versions:
+    - 4.5.10
+    - 4.5.11
+    - 4.5.12
+    - 4.5.13
+    - 4.5.14
+    - 4.5.8
+    - 4.5.9
+  - dependency-name: react-dropzone
+    versions:
+    - 11.3.1
+    - 9.0.0
+  - dependency-name: react-scripts
+    versions:
+    - 4.0.1
+  - dependency-name: react
+    versions:
+    - 17.0.1
